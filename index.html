@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="header">
+            <input type="text" placeholder="Add New Task" class="task-input">
+            <button id="add-task">Add</button> 
+        </header>
+ 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <!-- <li><a href="#">Dashboard</a></li> -->
+                    <li><a href="#">Tasks</a></li>
+                    <!-- <li><a href="#">Completed</a></li> -->
+                    <!-- <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li> -->
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Message Alert -->
+            <div id="message" class="message hidden"></div>
+            <h2>Task List</h2>
+            <table class="task-table">
+                <thead>
+                    <tr>
+                        <!-- <th>Status</th> -->
+                        <th id="sort-header-task">Task</th>
+                        <th id="sort-header-date">Created</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </main>
+    </div>
+
 </body>
+<script src="./js/script.js"></script>
 </html>
